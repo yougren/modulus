@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>i madfe thing</title>
+	<style>
+		.main {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		.controls {
+			display: flex;
+			flex-direction: column;
+		}
+	</style>
+</head>
+<body>
+	<div class="main">
+		<div class="container">
+			<canvas id="main-canvas" class="canvas" width="600" height="600" style="border: 1px solid black"></canvas>
+			
+			<div class="controls">
+				<label for="points-input"># of points:</label>
+				<input id="points-input" type="text" />
+			
+				<label for="multiplier-input">multiplier:</label>
+				<input id="multiplier-input" type="text" />
+			
+				<label for="speed-input">speed:</label>
+				<input id="speed-input" type="text" />
+			
+				<button id="render-button">Render</button>
+				<button id="animate-button">Animate</button>
+			</div>
+		</div>
+		<div class="container">
+			<canvas id="secondary-canvas" class="canvas" width="600" height="600" style="border: 1px solid black"></canvas>
+		
+			<div class="controls">
+				<label for="points-input-secondary"># of points:</label>
+				<input id="points-input-secondary" type="text" />
+			
+				<label for="multiplier-input-secondary">multiplier:</label>
+				<input id="multiplier-input-secondary" type="text" />
+			
+				<button id="render-button-secondary">Render</button>
+			</div>
+		</div>
+	</div>
+</body>
+<script src="./index.js"></script>
+
+</html>
